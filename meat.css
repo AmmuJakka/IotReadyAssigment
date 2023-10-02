@@ -1,0 +1,105 @@
+.background-div {
+    display: flex;
+    flex-direction: column;
+    background-color: #E8E8E8;
+    height: 100vh;
+    justify-content: space-between;
+}
+.left-box {
+    padding-left: 5%;
+}
+.meat-packing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.symbols{
+    padding:0px 30px;
+}
+
+.left-arrow {
+    font-size: 20px;
+    color:white;
+    background-color: white;
+}
+
+.right-box {
+    min-width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+}
+.rb-middle {
+    align-self: center;
+}
+.rb-right {
+    align-self: flex-end;
+}
+
+@media (orientation: landscape) {
+    .footer {
+        align-self: flex-end;
+        display: block;
+        visibility: hidden;
+    }
+    .parent-cont {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 2px;
+    }
+
+    .land-parent {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .parent-cont {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+    }
+}
+
+@media (orientation: portrait) {
+    .symbols {
+        visibility: hidden;
+    }
+    .f-symbols {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+        padding: 10px;
+    }
+    .f-middle {
+        background-color: white;
+        height: 100%;
+        border: 1px solid white;
+    }
+    .parent-cont {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 3px;
+    }
+    .rb-middle {
+    align-self: center;
+    }
+    .rb-right {
+        align-self: flex-end;
+    }
+}
